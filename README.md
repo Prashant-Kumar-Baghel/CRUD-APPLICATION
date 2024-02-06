@@ -1,1 +1,12 @@
-- use Semantic UI React in thsi project
+- npx create-react-app 
+- use Semantic UI React in thsi project(install and import)
+- react-router-dom
+- npm install firebase
+- SetUp Firebase
+- Go to firestore database and create database(Set Location as nam5(united states) and start in production mode )
+- SetUp the Rules in firestore database so we can read and write on firebase (for that we do allow read, write: if true;)
+- Go to storage because we need to store files and setup the rules also.
+- Routing
+- create the form
+- Upload the image on firebase storage.
+- upload the user information such as name,email etc on firebase firestore.

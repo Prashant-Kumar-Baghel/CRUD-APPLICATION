@@ -1,9 +1,27 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import AddEditUser from "./pages/AddEditUser";
 
 function App() {
+  const appRouter=createBrowserRouter([
+    {
+      path:"/",
+      element:<Home/>
+    },
+    {
+      path:"/add",
+      element:<AddEditUser/>
+    },
+    {
+      path:"/update/:id",
+      element:<AddEditUser/>
+    }
+  ])
   return (
     <div className="App">
-      Hello   
-    </div>
+      
+      <RouterProvider router={appRouter}/>
+  </div>
   );
 }
 
