@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { storage, db } from '../utils/firebase';
 import {  GridColumn, GridRow,Button,Grid,Loader } from 'semantic-ui-react';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
-import { useNavigate, useParams, useSubmit } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { addDoc, collection, doc, getDoc, serverTimestamp, updateDoc } from 'firebase/firestore';
 const initialState={
   name:"",
